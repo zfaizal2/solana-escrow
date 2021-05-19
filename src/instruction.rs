@@ -1,9 +1,7 @@
 pub mod entrypoint;
 
 use std::convert::TryInto;
-use solana_program::program_error::ProgramError;
 
-use crate::error::EscrowError::InvalidInstruction;
 
 pub enum EscrowInstruction {
     /// create and populate escrow account & transfer ownership of temp token to program derived address
